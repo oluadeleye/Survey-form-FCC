@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manchester United Fan Survey</title>
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <div> 
+      <h1 id="title">Manchester United Fan Survey</h1>
+      <h3>Season Satisfaction.</h3>
+   <p id = "description"><i>Let us know how you really feel!</i></p>
+      </div>
+    <form  id="survey-form" action="" methop="post">
+      <table>
+        <tr>
+        <td>
+        <label id="name-label" for="firstname">Firstname
+        </label>
+        </td>
+        <td>
+        <input type="text" placeholder="Firstname" id="name" required/>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <label id="name-label" for="Lastname">Lastname</label>
+          </td>
+          <td>
+      <input type="text" id="name" placeholder="Lastname" required></td>
+        </tr>
+        <tr>
+          <td><label id="email-label" for="email">Email</label></td>
+      <td><input type="email" id="email" placeholder="samsmith@fcc.com" required></td>
+        </tr>
+        <tr>
+          <td><label id="number-label" for="Phonenumber">Phone Number</label></td>
+      <td><input type="number" id="number" max="9" min="9" placeholder="111-111-1111" required></td>
+        </tr>
+         <tr>
+           <td>
+          <label for="gender" id="gender-label">What is your gender?</label>
+           </td>
+           <td>
+           <input type="radio" id="option" name="gender" value="male" required>Male</input>
+        <input type="radio" id="option" name="gender" value="female"required>Female</input></td>
+      </td>
+      </tr>
+      <tr>
+        <td>
+          <label> What part of the club needs an upgrade?</label>
+        </td>
+        <td>
+          <select type="text" id="dropdown" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="eaststand">East Stand</option>
+            <option value="weststand">West Stand</option>
+            <option value="none">None</option>
+          </select>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          <label  for="radio-buttons"> * How likley are you going to buy next years season tickets?</label>
+        </td>
+        <td>
+          <input type="radio" id="radio-1" name="radios" value="1"size="40px"/>Absolutely</input>
+      <input type="radio" id="radio-2" name="radios"value="2" size="40px"/> Maybe</input>
+    <input type="radio" id="radio-3" name="radios" value="3" size="40px"/>Absolutely Not</input>
+          </input>
+        </td>
+      </tr>
+
+<tr>
+        <td>
+          <label> What change do you want to see next season?</label>
+        </td>
+        <td>
+          <input type="checkbox" id="option" value="1" size="40px"/>Buy new players</input>
+      <input type="checkbox" id="option" value="2" size="40px"/>Fire the manager</input>
+    <input type="checkbox" id="option" value="3" size="40px"/>Ownership change</input>
+          </input>
+        </td>
+      </tr>
+
+<tr>
+  <td>
+    <label for="textarea">Leave a comment.</label>
+  </td>
+  <td>
+    <textarea size="300px" width="200px" max=" 1000" required></textarea>
+  </td>
+</tr>
+
+<td>
+<div>
+  <button id="submit">Submit</button>
+</div>
+</td> 
+   
+       </table>
+    </form>
+  </body>
+</html>
